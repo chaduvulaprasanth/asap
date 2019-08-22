@@ -1,0 +1,178 @@
+/*css reset*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*my reset*/
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+/*my css*/
+html {
+	font-size: 16px;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background: black;
+}
+
+/*header section*/
+.position-change {
+	position: absolute;
+	width: 100%;
+}
+header {
+	margin-top: 4rem;
+}
+.logo {
+	font-size: 2rem;
+	color: white;
+	text-decoration: none;
+	font-weight: 500;
+	margin-left: 5rem;
+}
+
+/*hero section*/
+.hero {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	margin-top: 3rem;
+	padding: 0 5rem;
+}
+.hero img {
+	height: auto;
+	width: 100%;
+}
+.hero-heading {
+	font-size: 2.5rem;
+	color: white;
+	font-weight: 500;
+	letter-spacing: 0.08rem;
+	text-transform: uppercase;
+
+}
+.hero-subheading {
+	font-size: 1.2rem;
+	color: white;
+	letter-spacing: 0.08rem;
+	line-height: 1.5;
+	font-weight: 400;
+	margin: 1.5rem 0;
+}
+.hero-caption {
+	font-size: 1rem;
+	color: white;
+	letter-spacing: 0.08rem;
+	font-weight: 300;
+
+}
+
+/*section upper-footer*/
+.upper-footer {
+	display: flex;
+	justify-content: space-around;
+}
+.company-sec-heading, .communities-sec-heading, .contact-sec-heading {
+	color: #909496;
+	font-size: 1rem;
+	margin-bottom: 1.8rem;
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: 0.08rem;
+
+}
+.company-sec-items, .communities-sec-items{
+	display: block;
+	text-decoration: none;
+	color: white;
+	font-size: 1rem;
+	letter-spacing: 0.08rem;
+	margin-bottom: 1.8rem;
+}
+.contact-address {
+	color: white;
+	line-height: 2;
+	letter-spacing: 0.08rem;
+	font-size: 1rem;
+
+}
+.madein-text {
+	color: white;
+	font-size: 1rem;
+	letter-spacing: 0.08rem;
+	margin-bottom: 1.8rem;
+}
+.madein-items, .madein-items-a {
+	text-decoration: none;
+	display: block;
+	color: white;
+	font-size: 1rem;
+	margin-bottom: 1.8rem;
+}
+
+/*for tablet*/
+@media all and (max-width: 960px) {
+	html {
+		font-size: 12px;
+	}
+	.another {
+		display:block;
+		justify-content: none;
+	}
+}
+/*for mobile*/
+@media all and (max-width: 760px) {
+	html {
+		font-size: 10px;
+	}
+	.another {
+		display:block;
+	}
+}
