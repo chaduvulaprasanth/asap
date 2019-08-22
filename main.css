@@ -122,8 +122,9 @@ header {
 
 /*section upper-footer*/
 .upper-footer {
-	display: flex;
-	justify-content: space-between;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	justify-content: space-between; 
 	margin-top: 4rem;
 }
 .company-sec-heading, .communities-sec-heading, .contact-sec-heading {
@@ -148,6 +149,7 @@ header {
 	line-height: 2;
 	letter-spacing: 0.08rem;
 	font-size: 1rem;
+	margin-bottom: 1.8rem;
 
 }
 .madein-text {
@@ -171,9 +173,18 @@ header {
 	}
 	.hero {
 		text-align: center;
+		display: block;
+		width: 100%;
+		margin-top: 5rem;
 	}
-	.another {
-		display:block;
+	.upper-footer{
+		grid-template-columns: 1fr 1fr;
+	}
+	.communities-sec {
+		display: inline-block;
+	}
+	.padding {
+		padding-left: 2rem;
 	}
 }
 /*for mobile*/
@@ -181,7 +192,23 @@ header {
 	html {
 		font-size: 10px;
 	}
-	.another {
-		display:block;
+	.hero {
+		text-align: center;
+		display: block;
+		width: 100%;
+		margin-top: 5rem;
 	}
+	.upper-footer{
+		grid-template-columns: 1fr 1fr;
+	}
+	.mobile-margin{
+		margin-top: 4rem;
+	}
+	/*.another {
+		display:block;
+	}*/
+	.padding {
+		padding-left: 2rem;
+	}
+
 }
