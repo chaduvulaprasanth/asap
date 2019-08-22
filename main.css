@@ -61,6 +61,11 @@ body {
 	font-family: 'Roboto', sans-serif;
 	background: black;
 }
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+	
+}
 
 /*header section*/
 .position-change {
@@ -68,23 +73,23 @@ body {
 	width: 100%;
 }
 header {
-	margin-top: 4rem;
+	padding-top: 3rem;
 }
 .logo {
 	font-size: 2rem;
 	color: white;
 	text-decoration: none;
 	font-weight: 500;
-	margin-left: 5rem;
+	letter-spacing: 0.08rem;
 }
 
 /*hero section*/
 .hero {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	grid-gap: 10rem;
 	align-items: center;
-	margin-top: 3rem;
-	padding: 0 5rem;
+	margin-top: 1rem;
 }
 .hero img {
 	height: auto;
@@ -93,18 +98,19 @@ header {
 .hero-heading {
 	font-size: 2.5rem;
 	color: white;
-	font-weight: 500;
+	font-weight: 400;
 	letter-spacing: 0.08rem;
 	text-transform: uppercase;
+	line-height: 1.5;
 
 }
 .hero-subheading {
 	font-size: 1.2rem;
 	color: white;
 	letter-spacing: 0.08rem;
-	line-height: 1.5;
+	line-height: 1.8;
 	font-weight: 400;
-	margin: 1.5rem 0;
+	margin: 2rem 0;
 }
 .hero-caption {
 	font-size: 1rem;
@@ -117,7 +123,8 @@ header {
 /*section upper-footer*/
 .upper-footer {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
+	margin-top: 4rem;
 }
 .company-sec-heading, .communities-sec-heading, .contact-sec-heading {
 	color: #909496;
@@ -162,9 +169,11 @@ header {
 	html {
 		font-size: 12px;
 	}
+	.hero {
+		text-align: center;
+	}
 	.another {
 		display:block;
-		justify-content: none;
 	}
 }
 /*for mobile*/
